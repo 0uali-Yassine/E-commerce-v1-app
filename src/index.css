@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    @media only screen and (100px <= width <=700px) {
+        .menu{
+            display: block;
+        }
+       
+        .links{
+            display: none;
+        }
+        .hero_banner{
+            width: 90%;
+        }
+        .exclusive{
+            height: auto;
+            width: 90%;
+        }
+        .section_total{
+            flex-direction: column;
+            align-items: center;
+            height: 400px;
+        }
+    }
+    @media only screen and (100px <= width <=819px){
+        .main_info{
+            flex-direction: column;
+            align-items: center;
+        }
+        .images_info{
+            flex-direction: column;
+            align-items: center;
+        }
+        .multiplImage{
+            flex-direction: row;
+        }
+        .table{
+            width: 90%;
+        }
+        .section_total{
+            width: 90%;
+        }
+    }
+    @media only screen and (100px <= width <=858px) {
+        .navbar{
+            padding: 0px;
+        }
+
+        .header_hero{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        .hero_Content{
+            padding: 0;
+            width: 80%;
+            text-align: center;
+        }
+        .new_Content{
+            margin: auto;
+        }
+        .hero_img{
+            width: 234px;
+            margin: auto;
+        }
+    }
+}
